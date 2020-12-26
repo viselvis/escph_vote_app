@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:escph_vote_app/ui/pages/splash/escph_splash.dart';
-
+import 'package:escph_vote_app/routes/router.dart';
 void main() {
   runApp(StartApp());
 }
@@ -10,6 +10,7 @@ class StartApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      onGenerateRoute: MyRouter.generateRoute,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
